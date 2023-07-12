@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mortgage_calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet"></head>
+<body>
+    <div id="container">
+        <h1>Mortgage calculator</h1>
+        <form>
+           <p>annual percentage rate <span>% <input type="number" placeholder="percentage" id="annualPercentageRate"></span></p>
+           <p>mortgage loan amount <span>$ <input type="number" placeholder="loan amount" id="loanAmount"> </span></p>
+           <p>loan term  <span>(years) <input type="number" placeholder="loan term" id="loanTerm"> </span></p>
+
+           <fieldset>
+            <legend>choose a mortgage type</legend>
+            
+            <div>
+                <input type="radio" name="mortgageType" value="annuity"
+                       >
+                <label for="annuity">annuity</label>
+              </div>
+          
+              <div>
+                <input type="radio" name="mortgageType" value="differentiated">
+                <label for="differentiated">differentiated</label>
+              </div>
+
+           </fieldset>
+           <!-- <p>Other expenses</p>
+           
+           <button id="btnNewExpense">New expense</button>
+           <select id="expense">
+              <option disabled>Select an expense</option>
+              <option>transfer/taxi/tram/metro</option>
+              <option>food/drink</option>
+              <option>excursion/gallery/museum</option>
+              <option>spa/wellness</option>
+              <option selected>other expences</option>
+           </select> -->
+
+           
+
+           <!-- <p>Amount <span>$ <input type="number" placeholder="amount" id="money"> <button id="addExpense">Add</button> </span></p> -->
+
+           
+           <br>
+
+
+           <button id="calculateMortgage">Calculate Mortgage</button>
+           <ul id="container2"></ul>
+
+           <div id="forButton"></div>
+           <div id="forTable">
+            <table class="ptable">
+                <tr>
+                    <th rowspan="2">month</th>
+                    <th colspan="3">payment</th>
+                    <th rowspan="2">remaining debt</th>
+                </tr>
+                
+                <td>debt</td>
+                <td>percentage</td>
+                <td>total</td>
+                
+                <tbody class="tableBody">
+
+                </tbody>
+            </table>
+           </div>
+        </form>
+
+        <!-- </div>
+        <div id="showTotal">
+            <div id="total">
+                <p>Total expenses</p>
+                <span>$</span>
+                <span id="totalExpense"></span>
+                
+        </div> -->
+    </div>
+    
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="script.js"></script>
+</body>
+</html>

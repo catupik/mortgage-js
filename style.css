@@ -1,0 +1,96 @@
+tr, td, th {
+    border: solid grey 1px;
+    text-align: center;
+}
+
+
+.ptable {
+    width: 580px;
+    border: solid grey 1px;
+    
+}
+#forTable {
+    display: none;
+}
+
+
+body {
+    background-image: url("https://img.freepik.com/free-photo/real-eastate-wallpaper-background-house-key-mortgage-concept_53876-148105.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    background-color:rgba(54, 84, 109, 0.9);
+    background-attachment: fixed;
+    
+}
+
+#container {
+    background-color:rgba(68, 99, 114, 0.5); 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    border-radius: 10px;
+    color: white;
+    margin: 15px;
+    
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Comfortaa', cursive;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    h1 {
+        font-family: 'Comfortaa', cursive;
+        color: #3af2ff;
+        align-self: center;
+        font-size: 30px;
+        text-shadow: 1px 1px 2px black;
+        
+    }
+
+    input {
+        font-family: 'Comfortaa', cursive;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    #calculateMortgage, .btn {
+        background-color:#256161;
+        color: white;
+        font-weight: bolder;
+        border: 1px solid rgb(33, 85, 94);
+        border-radius: 10px;
+        padding: 5px;
+        font-family: 'Comfortaa', cursive;
+        margin-left: 10px;
+        
+        }
+        
+
+
+    li {
+        color: white;
+    }
+    p {
+        margin-left: 10px;
+    }
+
+    @media all and (max-width: 500px){
+        .ptable {
+            width: 100%;
+        }
+
+        #total {
+            width: 100%;
+            margin-left: 0;
+        }
+        #container {
+            margin-left: 0;
+            width: 100%;
+        }
+    }
