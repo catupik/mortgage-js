@@ -1,5 +1,7 @@
 const calculateMortgage = document.querySelector("#calculateMortgage");
-calculateMortgage.addEventListener("click", calculatePayments);
+if (calculateMortgage) {
+    calculateMortgage.addEventListener("click", calculatePayments);
+}
 
 
 function calculatePayments(e){
