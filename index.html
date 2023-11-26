@@ -13,21 +13,21 @@
     <div id="container">
         <h1>Mortgage calculator</h1>
         <form>
-           <p>annual percentage rate <span>% <input type="number" placeholder="percentage" id="annualPercentageRate"></span></p>
-           <p>mortgage loan amount <span>$ <input type="number" placeholder="loan amount" id="loanAmount"> </span></p>
-           <p>loan term  <span>(years) <input type="number" placeholder="loan term" id="loanTerm"> </span></p>
+           <p>annual percentage rate <span>% <input type="number" placeholder="percentage" id="annualPercentageRate" min=0></span></p>
+           <p>mortgage loan amount <span>$ <input type="number" placeholder="loan amount" id="loanAmount" min=0> </span></p>
+           <p>loan term  <span>(years) <input type="number" placeholder="loan term" id="loanTerm" min=0> </span></p>
 
            <fieldset>
             <legend>choose a mortgage type</legend>
             
             <div>
-                <input type="radio" name="mortgageType" value="annuity"
+                <input type="radio" name="mortgageType" value="annuity id='annuity'"
                        >
                 <label for="annuity">annuity</label>
               </div>
           
               <div>
-                <input type="radio" name="mortgageType" value="differentiated">
+                <input type="radio" name="mortgageType" value="differentiated" id='differentiated'>
                 <label for="differentiated">differentiated</label>
               </div>
 
