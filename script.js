@@ -84,9 +84,9 @@ function calculatePayments(e){
             const item = document.createElement("li");
             item.innerText = "Monthly payment: " + monthlyPayment.toFixed(0) + " $";
             container2.appendChild(item);
-            const overpament = monthlyPayment * (loanTerm*12) - mortgageLoanAmount;
+            const overpayment = monthlyPayment * (loanTerm*12) - mortgageLoanAmount;
             const item2 = document.createElement('li');
-            item2.innerText = "Total overpayment: " + overpament.toFixed(0) + " $";
+            item2.innerText = "Total overpayment: " + overpayment.toFixed(0) + " $";
             container2.appendChild(item2);
     
             
@@ -95,7 +95,7 @@ function calculatePayments(e){
                 const percentage = debt * monthlyRate;
                 const main_amount = monthlyPayment - percentage;
                 debt = debt - main_amount;
-                let new_list = [i, percentage.toFixed(0),main_amount.toFixed(0), monthlyPayment.toFixed(0),debt.toFixed(0)]
+                let new_list = [i, percentage.toFixed(0), main_amount.toFixed(0), monthlyPayment.toFixed(0),debt.toFixed(0)]
                 const tr = document.createElement('tr');
                 const tableBody = document.querySelector('.tableBody')
                 for (let i=0; i<new_list.length; i++) {
@@ -158,7 +158,7 @@ function calculatePayments(e){
                 let monthlyDebtPayment = mortgageLoanAmount/(loanTerm*12);
                 let monthlyPayment = monthlyDebtPayment + percentage;
                 debt = debt - monthlyDebtPayment;
-                let new_list = [i, monthlyDebtPayment.toFixed(0), percentage.toFixed(0), monthlyPayment, debt.toFixed(0)];
+                let new_list = [i, monthlyDebtPayment.toFixed(0), percentage.toFixed(0), monthlyPayment.toFixed(0), debt.toFixed(0)];
                 overpaymentDifferentiated += monthlyPayment;
                 const tableBody = document.querySelector('.tableBody')
                 const tr = document.createElement('tr');
