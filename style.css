@@ -1,12 +1,18 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500&family=Roboto:wght@100;300&display=swap');
+
+
 tr, td, th {
-    border: solid grey 1px;
+    border: solid rgb(255, 255, 255) 1px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 
 .ptable {
     width: 580px;
-    border: solid grey 1px;
+    border: solid rgb(255, 255, 255) 1px;
     
 }
 #forTable {
@@ -17,7 +23,7 @@ tr, td, th {
 body {
     background-image: url("home.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center;
     background-size: cover;
     background-color:rgba(54, 84, 109, 0.9);
     background-attachment: fixed;
@@ -25,14 +31,14 @@ body {
 }
 
 #container {
-    background-color:rgba(68, 99, 114, 0.5); 
+    background-color: #5450507b; 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 600px;
     border-radius: 10px;
     color: white;
-    margin: 15px;
+    margin: 1rem;
     
     }
     
@@ -45,42 +51,58 @@ body {
     }
 
     h1 {
-        font-family: 'Comfortaa', cursive;
-        color: #3af2ff;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #e7f042;
         align-self: center;
-        font-size: 30px;
-        text-shadow: 1px 1px 2px black;
+        font-size: 40px;
+       font-weight: 500;
         
     }
 
     input {
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Roboto', sans-serif;
         padding: 5px;
         border-radius: 5px;
     }
 
     #calculateMortgage, .btn {
-        background-color:#256161;
-        color: white;
+        background-color:#e7f042;
+        color: #193146; 
         font-weight: bolder;
-        border: 1px solid rgb(33, 85, 94);
-        border-radius: 10px;
-        padding: 5px;
-        font-family: 'Comfortaa', cursive;
-        margin-left: 10px;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-left: 1rem;
+        font-size: 1rem;
         
         }
         
+    #showPayments  {
+        margin-bottom: 1rem;
+    }  
 
 
-    li {
+    li, legend, label {
         color: white;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    fieldset{
+        border: none;
     }
     p {
-        margin-left: 10px;
+        margin-left: 1rem;
+        font-family: 'Roboto', sans-serif;
     }
 
     @media all and (max-width: 500px){
+
+        body {
+            
+            background-position: top center;
+
+        }
         .ptable {
             width: 100%;
         }
