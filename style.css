@@ -16,7 +16,7 @@ tr, td, th {
     
 }
 #forTable {
-    display: none;
+    display: block;
 }
 
 
@@ -100,7 +100,7 @@ body {
         body {
             background-position: top center;
             padding: 10px;
-            background-attachment: scroll;
+            
         }
         
         .ptable {
