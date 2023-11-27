@@ -26,7 +26,7 @@ body {
     background-position: center;
     background-size: cover;
     background-color:rgba(54, 84, 109, 0.9);
-    background-attachment: fixed;
+    background-attachment: scroll;
     
 }
 
